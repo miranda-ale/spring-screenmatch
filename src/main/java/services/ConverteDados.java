@@ -13,7 +13,7 @@ public class ConverteDados implements IConverteDados {
         try {
             return mapper.readValue(json, classe);
         } catch (JsonProcessingException e) {
-            System.out.println(e.getCause());
+            System.out.println("Erro na consulta: " + e.getCause());
             throw new RuntimeException(e);
 
         }
