@@ -2,7 +2,6 @@ package services;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.DadosSerie;
 
 public class ConverteDados implements IConverteDados {
     private ObjectMapper mapper = new ObjectMapper();
